@@ -1,0 +1,3 @@
+PURPOSE of /CoreOS/rhel-system-roles/Sanity/check-files
+Description: Check the role files
+Author: Jakub Haruda <jharuda@redhat.com>

@@ -1,0 +1,21 @@
+summary: Check the role files
+description: ''
+contact: Jakub Haruda <jharuda@redhat.com>
+require:
+  - library(distribution/extras)
+  - library(distribution/RpmSnapshot)
+recommend:
+  - rhel-system-roles
+  - git
+tier: '1'
+adjust:
+  - enabled: false
+    when: distro < rhel-7
+    continue: false
+  - enabled: false
+    when: arch != x86_64
+    continue: false
+duration: 15m
+order: 14
+extra-nitrate: TC#0615916
+id: 2061c5b9-dec4-4ea3-8ae0-3f832523d53c
